@@ -1,0 +1,924 @@
+.nav-header {
+    background: #fdfcfd;
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 9px 0px #0000005e;
+    height: 100px;
+    z-index: 100;
+    align-items: center;
+}
+
+.main {
+    margin-left: auto;
+}
+
+.hero-carousel {}
+
+.hero-carousel>img {
+    width: 33vw;
+    height: 33vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.img-1 {
+    width: 100%;
+    height: 33vh;
+    background-image: url(kitchen-hightech.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    width: 100%;
+    height: 33vh;
+    background-image: url(toront-skyline.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    width: 100%;
+    height: 33vh;
+    background-image: url(living-room.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicesheaders {
+    text-align: center;
+    border-radius: 7px;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+    height: 60%;
+    align-content: center;
+    padding: 15px 0px;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.cards {
+    margin: 65px 0;
+    text-align: center;
+}
+
+.cards p {
+    font-size: 15px;
+}
+
+.cards img {
+    width: 30%;
+    margin: 50px auto 30px;
+    display: block;
+}
+
+.cards h3 {
+    margin-top: 75px;
+}
+
+.subscribe {
+    margin: 65px 0px;
+    text-align: center;
+}
+
+.services-header {
+    margin-bottom: 45px;
+}
+
+.why {
+    margin-top: 40px;
+}
+
+footer.text-center.text-white {
+    background: #299fc4;
+}
+
+nav.navbar.navbar-expand-md.navbar-dark {
+    background: #299fc4;
+}
+
+img.ace-logo {
+    width: 130px;
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.popup {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 30px 50px;
+    border-radius: 4px;
+    box-shadow: -7px 7px 9px #0000004d;
+    width: max-content;
+    z-index: 100;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0px -1px 4px #0000001d);
+    display: none;
+}
+
+.popup a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 23px;
+    color: #38b3d7;
+    margin: 10px 0;
+}
+
+.popup svg {
+    margin-right: 8px;
+}
+
+.contact-popup-wrapper,
+.social-popup-wrapper {
+    opacity: 0;
+    pointer-events: none;
+    /* transition: opacity 350ms ease-out 50ms; */
+    z-index: 0;
+}
+
+.contact-popup-wrapper.popup-open,
+.social-popup-wrapper.popup-open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 350ms ease-out 50ms;
+    z-index: 100;
+}
+
+.popup-open .popup {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    top: 0;
+}
+
+@media (min-width:320px) {
+    .nav-header {
+        background: #fdfcfd;
+        display: none;
+        justify-content: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 6px 9px 0px #0000005e;
+        height: 100px;
+        z-index: 100;
+        align-items: center;
+    }
+    .main {
+        margin-left: auto;
+    }
+    .hero-carousel {}
+    .hero-carousel>img {
+        width: 33vw;
+        height: 33vh;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .img-1 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(kitchen-hightech.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-2 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(toront-skyline.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-3 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(living-room.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .servicesheaders {
+        text-align: center;
+        border-radius: 7px;
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0;
+        box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+        height: 60%;
+        align-content: center;
+        padding: 15px 0px;
+        line-height: 1;
+        font-size: 18px;
+    }
+    .cards {
+        margin: 65px 0;
+        text-align: center;
+    }
+    .cards p {
+        font-size: 15px;
+    }
+    .cards img {
+        width: 30%;
+        margin: 50px auto 30px;
+        display: block;
+    }
+    .cards h3 {
+        margin-top: 75px;
+    }
+    .subscribe {
+        margin: 65px 0px;
+        text-align: center;
+    }
+    .services-header {
+        margin-bottom: 45px;
+    }
+    .why {
+        margin-top: 40px;
+    }
+    footer.text-center.text-white {
+        background: #299fc4;
+    }
+    nav.navbar.navbar-expand-md.navbar-dark {
+        background: #299fc4;
+    }
+}
+
+@media (min-width:480px) {
+    .cards p {
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        margin: 0;
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+    }
+    ul,
+    li {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .nav-item {
+        position: relative;
+    }
+    .nav-header {
+        background: #fdfcfd;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 6px 9px 0px #0000005e;
+        height: 100px;
+        z-index: 100;
+        align-items: center;
+    }
+    .main {
+        text-align: center;
+        justify-content: right;
+        align-items: right;
+        display: flex;
+        flex-direction: row;
+        margin-left: 50%;
+    }
+    .blue-button {
+        background-color: #38b3d7;
+        cursor: pointer;
+    }
+    .blue-button:hover {
+        background-color: #48c5e9;
+        transition: 300ms ease-out;
+    }
+    .nav-button {
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        margin: 0 10px;
+        border-radius: 4px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        width: max-content;
+    }
+    .nav-button>a {
+        color: black;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    .hero-carousel>img {
+        width: 33vw;
+        height: 33vh;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .img-1 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(kitchen-hightech.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-2 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(toront-skyline.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-3 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(living-room.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .services-header {
+        text-align: center;
+    }
+    .servicesheaders {
+        text-align: center;
+        border-radius: 7px;
+        width: 100%;
+        display: inline-block;
+        margin: 10px 20px;
+        box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+        height: 60%;
+    }
+    .cards {
+        border-radius: 15px;
+        margin: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .cards>div {
+        width: 33%;
+        padding: 25px 10px;
+    }
+    .cards p {
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 23px;
+    }
+    /* .line {
+        background-color: rgba(128, 128, 128, 0.571);
+        height: 8.5px;
+        border-radius: 15px;
+        width: 45%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    } */
+    .card-1 {}
+    .card-1 .img {
+        background-image: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .card-2 {}
+    .card-2 .img {
+        background-image: url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .card-3 {}
+    .card-3 .img {
+        background-image: url(https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .cards h3 {
+        font-weight: 800;
+        font-size: 1.5em;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .form-cards {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        width: 100%;
+        display: flex;
+    }
+    .left-side {
+        width: 100%;
+        height: 100%;
+    }
+    .left-side-input {
+        text-decoration: none;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .services {
+        width: 80%;
+        margin: auto;
+    }
+    /* .services>div>div {
+        border-radius: 7px;
+        width: 28%;
+        display: inline-block;
+        margin: 10px 20px;
+        box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+    } */
+    .services>div>div>span {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 20px;
+        display: block;
+        font-weight: 800;
+        text-align: center;
+    }
+    .why>p {
+        font-size: 20px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        width: 65%;
+    }
+    footer.bottom-contact {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        bottom: 0;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom-contact>p {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .bottom-contact>p>a {
+        text-decoration: none;
+    }
+    img.ace-logo {
+        width: 130px;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 175px 0 60px 0;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        background: linear-gradient(0deg, #e8faff, transparent);
+    }
+    #email {
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 10px 30px;
+        font-size: 16px;
+        min-width: 250px;
+        margin: 5px 0px 12.5px;
+        text-align: center;
+    }
+    .submit-form {
+        width: min-content;
+        border-radius: 4px;
+        padding: 10px 30px;
+        font-size: 16px;
+        margin: auto;
+        color: white;
+    }
+    .bottom-cards {
+        display: block;
+        margin: auto;
+        padding: 15px;
+        display: none;
+    }
+    .blogs {
+        display: none;
+    }
+    .popup {
+        position: absolute;
+        top: 45px;
+        transform: translateX(-90%);
+        background: white;
+        padding: 30px 50px;
+        border-radius: 4px;
+        box-shadow: -7px 7px 9px #0000004d;
+        width: max-content;
+        z-index: 100;
+        left: 50%;
+    }
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px -1px 4px #0000001d);
+        display: block;
+    }
+    .popup a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 23px;
+        color: #38b3d7;
+        margin: 10px 0;
+    }
+    .popup svg {
+        margin-right: 8px;
+    }
+    .contact-popup-wrapper,
+    .social-popup-wrapper {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 350ms ease-out 50ms;
+        z-index: 100;
+    }
+    .contact-popup-wrapper.popup-open,
+    .social-popup-wrapper.popup-open {
+        opacity: 1;
+        pointer-events: auto;
+        transition: 350ms ease-out 50ms;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .popup-open .popup {
+        position: absolute;
+        top: 25px;
+        transform: translateX(-90%);
+        background: white;
+        padding: 30px 50px;
+        border-radius: 4px;
+        box-shadow: -7px 7px 9px #0000004d;
+        width: max-content;
+        z-index: 100;
+        left: 50%;
+    }
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+    body {
+        margin: 0;
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+    }
+    ul,
+    li {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .nav-item {
+        position: relative;
+    }
+    .nav-header {
+        background: #fdfcfd;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 6px 9px 0px #0000005e;
+        height: 100px;
+        z-index: 100;
+        align-items: center;
+    }
+    .main {
+        text-align: center;
+        justify-content: right;
+        align-items: right;
+        display: flex;
+        flex-direction: row;
+        margin-left: 50%;
+    }
+    .blue-button {
+        background-color: #38b3d7;
+        cursor: pointer;
+    }
+    .blue-button:hover {
+        background-color: #48c5e9;
+        transition: 300ms ease-out;
+    }
+    .nav-button {
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        margin: 0 10px;
+        border-radius: 4px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        width: max-content;
+    }
+    .nav-button>a {
+        color: black;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    .hero-carousel>img {
+        width: 33vw;
+        height: 33vh;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+    .img-1 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(kitchen-hightech.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-2 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(toront-skyline.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img-3 {
+        width: 100%;
+        height: 33vh;
+        background-image: url(living-room.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .services-header {
+        text-align: center;
+    }
+    .servicesheaders {
+        text-align: center;
+        border-radius: 7px;
+        width: 100%;
+        display: inline-block;
+        margin: 10px 20px;
+        box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+        height: 60%;
+    }
+    .cards {
+        border-radius: 15px;
+        margin: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .cards>div {
+        width: 33%;
+        padding: 25px 10px;
+    }
+    .cards p {
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 23px;
+    }
+    /* .line {
+        background-color: rgba(128, 128, 128, 0.571);
+        height: 8.5px;
+        border-radius: 15px;
+        width: 45%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    } */
+    .card-1 {}
+    .card-1 .img {
+        background-image: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .card-2 {}
+    .card-2 .img {
+        background-image: url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .card-3 {}
+    .card-3 .img {
+        background-image: url(https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+        width: 22vw;
+        height: 13.7vw;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+        background-size: cover;
+    }
+    .cards h3 {
+        font-weight: 800;
+        font-size: 1.5em;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .form-cards {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        width: 100%;
+        display: flex;
+    }
+    .left-side {
+        width: 100%;
+        height: 100%;
+    }
+    .left-side-input {
+        text-decoration: none;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .services {
+        width: 80%;
+        margin: auto;
+    }
+    /* .services>div>div {
+        border-radius: 7px;
+        width: 28%;
+        display: inline-block;
+        margin: 10px 20px;
+        box-shadow: 10px 6px 13px #494a4a38, 1px 6px 5px 2px #00000069;
+    } */
+    .services>div>div>span {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 20px;
+        display: block;
+        font-weight: 800;
+        text-align: center;
+    }
+    .why>p {
+        font-size: 20px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        width: 65%;
+    }
+    footer.bottom-contact {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        bottom: 0;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom-contact>p {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .bottom-contact>p>a {
+        text-decoration: none;
+    }
+    img.ace-logo {
+        width: 130px;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 175px 0 60px 0;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        background: linear-gradient(0deg, #e8faff, transparent);
+    }
+    #email {
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 10px 30px;
+        font-size: 16px;
+        min-width: 250px;
+        margin: 5px 0px 12.5px;
+        text-align: center;
+    }
+    .submit-form {
+        width: min-content;
+        border-radius: 4px;
+        padding: 10px 30px;
+        font-size: 16px;
+        margin: auto;
+        color: white;
+    }
+    .bottom-cards {
+        display: block;
+        margin: auto;
+        padding: 15px;
+        display: none;
+    }
+    .blogs {
+        display: none;
+    }
+    .popup a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 23px;
+        color: #38b3d7;
+        margin: 10px 0;
+    }
+    .popup svg {
+        margin-right: 8px;
+    }
+}
